@@ -15,10 +15,14 @@ public class AddCatagory {
 	@FindBy(how = How.XPATH, using = "//input[@name='categorydata']") WebElement ADDCATAGORY;
 	@FindBy(how = How.XPATH, using = "//input[@value='Add category']") WebElement ADDBUTTON;
 	@FindBy(how = How.XPATH, using = "//select[@name='due_month']") WebElement DROPDOWN;
-	public void userAbleToAddCatagory(String Abel3) {
-		ADDCATAGORY.sendKeys(Abel3);
+	public void userAbleToAddCatagory(String X) {
+		ADDCATAGORY.sendKeys(X);
 	}
 	public void UserAbleToClick() {
+		ADDBUTTON.click();
+	}
+	public void userNotAbleToDuplicateValues(String X) {
+		ADDCATAGORY.sendKeys(X);
 		ADDBUTTON.click();
 	}
 	public void userVlidatingMonth(String month) {

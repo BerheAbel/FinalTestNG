@@ -14,10 +14,11 @@ public class TestPage {
 	public void catagory()  {
 		driver = BrowserFactory.init();
 		AddCatagory addcatagory = PageFactory.initElements(driver, AddCatagory.class);
-		addcatagory.userAbleToAddCatagory("Abel3");
-//		addcatagory.UserAbleToClick();
-//		addcatagory.userVlidatingMonth("Jan");
-//		addcatagory.userVlidatingMonth("Feb");
-//		addcatagory.userVlidatingMonth("Mar");
+		addcatagory.userAbleToAddCatagory("AbelBerhe");
+		addcatagory.UserAbleToClick();
+		addcatagory.userNotAbleToDuplicateValues("Abel3");
+		addcatagory.userVlidatingMonth("Jan");
+		addcatagory.userVlidatingMonth("Feb");
+		addcatagory.userVlidatingMonth("Mar");
 	}
 }
